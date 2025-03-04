@@ -1,0 +1,13 @@
+{
+    "registry-mirrors": [
+	"https://docker.1panel.live",
+        "https://image.cloudlayer.icu"
+    
+    ],
+    "runtimes": {
+        "nvidia": {
+            "args": [],
+            "path": "nvidia-container-runtime"
+        }
+    }
+}
