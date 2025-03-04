@@ -1,8 +1,7 @@
-python -m pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple --upgrade pip
-pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+#!/bin/bash
 
-pip3 install torch torchvision torchaudio
+# python -m pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple --upgrade pip
+# pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 
-# nano /etc/pip.conf
-# [global]
-# index-url = https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+echo "[global]"                                                         | sudo tee /etc/pip.conf
+echo "index-url = https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple" | sudo tee -a /etc/pip.conf
